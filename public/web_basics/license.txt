@@ -1,0 +1,8 @@
+Model Information:
+* title:	Web Basics
+* source:	https://sketchfab.com/3d-models/web-basics-79381861bcef45a48142ea8c8f2da033
+* author:	Manoel (https://sketchfab.com/manoel)
+
+Model License:
+* license type:	SKETCHFAB Standard (https://sketchfab.com/licenses)
+* requirements:	Under basic restrictions, use worldwide, on all types of media, commercially or not, and in all types of derivative works
