@@ -1,33 +1,34 @@
-import React, { Suspense, useEffect, useState } from "react";
+import React, { Suspense, useEffect, useState, useRef } from "react";
 import { Canvas } from "@react-three/fiber";
-import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
+import { OrbitControls, Preload, useGLTF, Environment } from "@react-three/drei";
 import CanvasLoader from "../Loader";
 
-const Computers = ({ isMobile }) => {
-  const computer = useGLTF("./office/scene.gltf");
+const Avatar = ({ isMobile }) => {
+  const avatar = useGLTF("./me3d/marius3dd.glb");
 
   return (
-    <mesh>
-      <hemisphereLight intensity={0.15} groundColor="black" />
-      <spotLight
-        position={[-20, -50, 20]}
-        angle={0.12}
-        penumbra={1}
-        intensity={1}
-        shadow-mapSize={1024}
+    <mesh receiveShadow>
+      <hemisphereLight intensity={0.6} />
+      <directionalLight
+        position={[0, -10, 5]}
+        intensity={0.7}
+        castShadow
+        shadow-mapSize-width={1024}
+        shadow-mapSize-height={1024}
       />
-      <pointLight intensity={1} />
       <primitive
-        object={computer.scene}
-        scale={isMobile ? 0.7 : 1.2}
+        object={avatar.scene}
+        scale={isMobile ? 0.7 : 1.3}
         position={[0, -3, -2]}
         rotation={[-0.025, 0, 0]}
+        castShadow
       />
+      <Environment preset="city" />
     </mesh>
   );
 };
 
-const ComputersCanvas = () => {
+const AvatarCanvas = () => {
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
@@ -51,16 +52,17 @@ const ComputersCanvas = () => {
       frameloop="demand"
       shadows
       dpr={[1, 2]}
-      camera={{ position: [20, 3, 5], fov: 25 }}
+      camera={{ position: [0, 0, 10], fov: 15 }}
       gl={{ preserveDrawingBuffer: true }}
     >
       <Suspense fallback={<CanvasLoader />}>
         <OrbitControls
           enableZoom={false}
-          maxPolarAngle={Math.PI / 2}
-          minPolarAngle={Math.PI / 2}
+          target={[0, -1.2, -1]}
+          maxPolarAngle={Math.PI}
+          minPolarAngle={0}
         />
-        <Computers isMobile={isMobile} />
+        <Avatar isMobile={isMobile} />
       </Suspense>
 
       <Preload all />
@@ -68,4 +70,4 @@ const ComputersCanvas = () => {
   );
 };
 
-export default ComputersCanvas;
+export default AvatarCanvas;
