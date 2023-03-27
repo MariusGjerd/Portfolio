@@ -29,7 +29,7 @@ const Cube = (props) => {
       <mesh castShadow receiveShadow scale={2.75}>
         <boxGeometry args={[1, 1, 1]} />
         <meshStandardMaterial
-          color="#f4e7d4"
+          color="#fadb00"
           polygonOffset
           polygonOffsetFactor={-5}
           flatShading
