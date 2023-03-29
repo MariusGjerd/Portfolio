@@ -26,8 +26,10 @@ import satslogo from "./company/satslogo.png";
 import awlogo from "./company/aw.png";
 
 import moneymates from "./moneymates.png"
+import todo from "./todo.png"
 
 export {
+  todo,
   moneymates,
   awlogo,
   satslogo,

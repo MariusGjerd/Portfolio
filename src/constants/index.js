@@ -19,7 +19,8 @@ import {
   git,
   figma,
   threejs,
-  moneymates
+  moneymates,
+  todo
 } from "../assets";
 
 export const navLinks = [
@@ -207,25 +208,25 @@ const projects = [
     source_code_link: "https://github.com/MariusGjerd/moneymates-backend",
   },
   {
-    name: "TBA",
+    name: "PERN-Stack Todo-app",
     description:
-      "What would you like me to make?",
+      "Simple todo list with CRUD. Add, edit and delete your own todo list",
     tags: [
       {
-        name: "",
+        name: "React",
         color: "blue-text-gradient",
       },
       {
-        name: "",
+        name: "Express/Node.js",
         color: "green-text-gradient",
       },
       {
-        name: "",
+        name: "postgreSQL",
         color: "pink-text-gradient",
       },
     ],
-    image: "TBA",
-    source_code_link: "https://github.com/",
+    image: todo,
+    source_code_link: "https://github.com/MariusGjerd/todolistapp",
   },
 ];
 
