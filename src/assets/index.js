@@ -27,8 +27,10 @@ import awlogo from "./company/aw.png";
 
 import moneymates from "./moneymates.png"
 import todo from "./todo.png"
+import pokedex from "./pokedex.png"
 
 export {
+  pokedex,
   todo,
   moneymates,
   awlogo,

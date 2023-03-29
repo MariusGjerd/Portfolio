@@ -20,7 +20,8 @@ import {
   figma,
   threejs,
   moneymates,
-  todo
+  todo,
+  pokedex
 } from "../assets";
 
 export const navLinks = [
@@ -227,6 +228,27 @@ const projects = [
     ],
     image: todo,
     source_code_link: "https://github.com/MariusGjerd/todolistapp",
+  },
+  {
+    name: "Pokedex",
+    description:
+      "The Pokedex app is a user-friendly tool for Pokémon fans to explore the first 151 Pokémon.",
+    tags: [
+      {
+        name: "React",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Vite",
+        color: "green-text-gradient",
+      },
+      {
+        name: "SASS",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: pokedex,
+    source_code_link: "https://github.com/MariusGjerd/Pokedex-vite-react",
   },
 ];
 
