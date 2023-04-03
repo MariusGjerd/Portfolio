@@ -14,10 +14,10 @@ const ServiceCard = ({ index, title, icon }) => {
       className="w-full  p-[1px] rounded-[20px] shadow-card"
       >
         <div options={{ max: 45, scale: 1, speed: 450}}
-        className="bg-[#fadb00] rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col "
+        className="bg-[#f4f0e9] rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col "
         >
           <img src={icon} alt={title} className="w-16 h-16 object-contain"/>
-          <h3 className='text-[#ff2a2a] text-[20px] font-bold text-center'>{title}</h3>
+          <h3 className='text-[#092837] text-[20px] font-bold text-center'>{title}</h3>
         </div>
       </motion.div>
     </Tilt>
@@ -32,7 +32,7 @@ const About = () => {
       <h2 className={styles.sectionHeadText}>Overview</h2>
     </motion.div>
     <motion.p variants={fadeIn("", "", 0.1, 1)}
-    className='mt-4 text-[#c7c7c7] text-[17px] max-w-3xl leading-[30px]'>
+    className='mt-4 text-[#f4f0e9] text-[17px] max-w-3xl leading-[30px]'>
     As a Full Stack Developer, I bring extensive expertise in a wide range of cutting-edge technologies,
     focusing on creating seamless and efficient web applications. My technology stack includes JavaScript,
     Node.js, PostgreSQL, HTML, SASS, Tailwind, Vite, and React to name some, which enables me to develop robust and scalable

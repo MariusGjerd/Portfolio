@@ -9,7 +9,7 @@ const Loader = () => {
       <span className='canvas-load'></span>
       <p style={{
         fontSize: 14, 
-        color: '#fadb00', 
+        color: '#975b37', 
         fontWeight: 800, 
         marginTop: 40
         }}>

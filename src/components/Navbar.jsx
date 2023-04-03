@@ -9,7 +9,7 @@ const Navbar = () => {
   const [toggle, setToggle] = useState("")
   return (
     <nav
-      className={`${styles.paddingX} w-full flex items-center py-5 fixed top-0 z-20 bg-[#0a0a14]`}>
+      className={`${styles.paddingX} w-full flex items-center py-5 fixed top-0 z-20 bg-[#092837]`}>
 
       <div className='w-full flex justify-between items-center max-w-7xl mx-auto'>
         <Link
@@ -21,14 +21,14 @@ const Navbar = () => {
           }}
         >
           <img src={logo} alt="logo" className='w-19 h-9 object-contain' />
-          <p className='text-[#c7c7c7] text-[18px] font-bold cursor-pointer flex md:block hidden'>Marius Gjerd &nbsp; <span className='sm:block hidden'>Full-stack dev</span></p>
+          <p className='text-[#f4f0e9] text-[18px] font-bold cursor-pointer flex md:block hidden'>Marius Gjerd &nbsp; <span className='sm:block hidden'>Full-stack dev</span></p>
         </Link>
         <ul className='list-none hidden sm:flex flex-row gap-10'>
           {navLinks.map((link) => (
             <li
               key={link.id}
-              className={`${active === link.title ? "text-[#fadb00]" : "text-[#c7c7c7]"
-                } hover:text-[#fadb00] text-[18px] font-medium cursor-pointer`} onClick={() => setActive(link.title)}
+              className={`${active === link.title ? "text-[#975b37]" : "text-[#f4f0e9]"
+                } hover:text-[#f4f0e9] text-[18px] font-medium cursor-pointer`} onClick={() => setActive(link.title)}
             >
               <a href={`#${link.id}`}>{link.title}</a>
             </li>
@@ -36,12 +36,12 @@ const Navbar = () => {
         </ul>
         <div className='sm:hidden flex flex-1 justify-end items-center'>
           <img src={toggle ? close : menu} alt="menu" className='w-[28px] h-[28px] object-contain cursor-pointer' onClick={() => setToggle(!toggle)}/>
-          <div className={`${!toggle ? "hidden" : "flex"} p-6 bg-[#fadb00] text-[#ff2a2a] absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl`}>
+          <div className={`${!toggle ? "hidden" : "flex"} p-6 bg-[#975b37] text-[#f4f0e9] absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl`}>
           <ul className='list-none flex justify-end items-start flex-col gap-4'>
           {navLinks.map((link) => (
             <li
               key={link.id}
-              className={`${active === link.title ? "text-[#fadb00]" : "text-[#c7c7c7]"
+              className={`${active === link.title ? "text-[#975b37]" : "text-[#f4f0e9]"
                 }font-poppins font-medium cursor-pointer text-[16px]`} onClick={() => {setToggle(!toggle); setActive(link.title)}}
             >
               <a href={`#${link.id}`}>{link.title}</a>

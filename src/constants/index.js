@@ -158,7 +158,6 @@ const experiences = [
     points: [
       "As a full stack developer who has completed the AW Academy program for Javascript, I have gained extensive knowledge and hands-on experience in building and maintaining web applications.",
       "During my time at AW Academy, I learned the fundamentals of web development, including HTML, CSS, and Javascript, as well as modern frameworks and tools like React, Node.js, and Git. Through hands-on coding projects and real-world scenarios, I honed my skills in front-end and back-end development, including creating responsive designs, managing databases, and implementing secure authentication.",
-      "In my work experience as a full stack developer, I have applied these skills to build high-quality, user-friendly web applications for clients in a range of industries. I have worked on both large-scale and small-scale projects, collaborating with other developers, project managers, and stakeholders to ensure that applications meet the needs of the business and the end-user.",
       "Overall, my experience as a full stack developer and AW Academy graduate has given me a deep understanding of web development best practices and the ability to apply these skills to create high-quality, responsive applications. I am excited to continue growing and expanding my knowledge and skills in this field, and I am confident that my expertise will make me a valuable asset to any team.",
     ],
   },

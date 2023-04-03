@@ -9,8 +9,8 @@ import { textVariant } from "../utils/motion"
 
 const ExperienceCard = ({ experience }) => (
   <VerticalTimelineElement
-  contentStyle={{ background: '#fadb00', color: '#fadb00'}}
-  contentArrowStyle={{borderRight: '7px solid #fadb00', backgroundolor: '#fadb00'}}
+  contentStyle={{ background: '#f4f0e9', color: '#f4f0e9'}}
+  contentArrowStyle={{borderRight: '7px solid #f4f0e9', backgroundolor: '#f4f0e9'}}
   date={experience.date}
   iconStyle={{background: experience.iconBg}}
   icon={
@@ -23,17 +23,17 @@ const ExperienceCard = ({ experience }) => (
   </div>}
   >
     <div>
-      <h3 className="text-[#ff2a2a] text-[24px] font-bold">
+      <h3 className="text-[#975b37] text-[24px] font-bold">
         {experience.title}
       </h3>
-      <p className="text-[#ff2a2a] text-[16px] font-semibold" style={{ margin: 0 }}>{experience.company_name}</p>
+      <p className="text-[#975b37] text-[16px] font-semibold" style={{ margin: 0 }}>{experience.company_name}</p>
     </div>
 
     <ul className="mt-5 list-disc ml-5 space-y-2">
       {experience.points.map((point, index) => (
       <li 
       key={`experience-point-${index}`}
-      className="text-[#0a0a14] text-[14px] pl-1 tracking-wider"
+      className="text-[#092837] text-[14px] pl-1 tracking-wider"
       >
         {point}
       </li>))}
@@ -48,8 +48,8 @@ const Experience = () => {
     <motion.div
     variants={textVariant()}
     >
-      <p className="sm:text-[18px] text-[14px] text-[#fadb00] uppercase tracking-wider">What i have done so far</p>
-      <h2 className="text-[#fadb00] font-black md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px]">Work experience</h2>
+      <p className="sm:text-[18px] text-[14px] text-[#975b37] uppercase tracking-wider">What i have done so far</p>
+      <h2 className="text-[#975b37] font-black md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px]">Work experience</h2>
     </motion.div>
     <div className="mt-20 flex flex-col">
       <VerticalTimeline>

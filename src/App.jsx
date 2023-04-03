@@ -4,8 +4,8 @@ import { About, Contact, Experience, Hero, Navbar, Tech, Works } from './compone
 const App = () => {
   return (
     <BrowserRouter>
-    <div className="relative z-0 bg-[#0a0a14]">
-      <div className="bg-[#0a0a14]">
+    <div className="relative z-0 bg-[#092837]">
+      <div className="bg-[#092837]">
         <Navbar/>
         <Hero/>
       </div>
